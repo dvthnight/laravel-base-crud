@@ -7,6 +7,15 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="{{route("comics.index")}}">Comic</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     @yield('content')
 </body>
 </html>
