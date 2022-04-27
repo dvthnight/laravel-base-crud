@@ -46,6 +46,15 @@
                             <td>
                                 <a href="{{route("comics.edit",$comic)}}">modifica</a>
                             </td>
+                            <td>
+                                <form action="{{route("comics.destroy",$comic)}}" method="POST">
+                                    @csrf
+                                    @method("DELETE")
+                                    <button type="submit">
+                                        elimina
+                                    </button>
+                                </form> 
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>
