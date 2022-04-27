@@ -43,6 +43,9 @@
                             <td>
                                 <a href="{{route("comics.show",$comic)}}">Visualizza</a>
                             </td>
+                            <td>
+                                <a href="{{route("comics.edit",$comic)}}">modifica</a>
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>
