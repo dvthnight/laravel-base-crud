@@ -24,7 +24,13 @@
                 </div>
                 <div class="form-group">
                     <label for="price" class="form-label">Prezzo</label>
-                    <input type="text" name="price" id="price" value="{{old("price")}}" class="@error('price') is-invalid @enderror form-control" placeholder="Inserisci il prezzo del fumetto">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                        </div>
+                        <input type="text" name="price" id="price" value="{{old("price")}}" class="@error('price') is-invalid @enderror form-control" aria-label="Amount (to the nearest dollar)" placeholder="Inserisci il prezzo del fumetto">
+                        
+                    </div>
                 </div>
                 <div>
                     <label for="series" class="form-label">Serie</label>

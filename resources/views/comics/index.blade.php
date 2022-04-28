@@ -5,18 +5,21 @@
     <main>
         <div class="container">
             <h1>Elenco fumetti</h1>
-        <a href="{{route("comics.create")}}">Nuovo fumetto</a>
+            <a href="{{route("comics.create")}}">Nuovo fumetto</a>
         </div>
         <div class="container">
-            <table>
-                <thead>
-                    <th>Id</th>
-                    <th>Titolo</th>
-                    <th>Prezzo</th>
-                    <th>Serie</th>
-                    <th>Data</th>
-                    <th>Tipologia</th>
-                    <th></th>
+            <table class="table">
+                <thead class="thead-dark">
+                    <th scope="col">Id</th>
+                    <th scope="col">Titolo</th>
+                    <th scope="col">Prezzo</th>
+                    <th scope="col">Serie</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Tipologia</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+
                 </thead>
                 <tbody>
         
