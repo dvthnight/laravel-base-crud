@@ -9,13 +9,13 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="{{route("comics.index")}}">Comic</a>
+        <div class="container mb-4">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{route("comics.index")}}" class="nav-link">Comic</a>
                 </li>
             </ul>
-        </nav>
+        </div>
     </header>
     @yield('content')
 </body>
