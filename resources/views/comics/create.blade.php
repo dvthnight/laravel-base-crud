@@ -8,9 +8,9 @@
         <div class="container">
             <form action="{{route("comics.store")}}" method="POST">
                 @csrf
-                <div>
-                    <label for="name">Titolo</label>
-                    <input type="text" name="title" id="name" placeholder="Inserisci il titolo del fumetto">
+                <div class="form-group">
+                    <label for="name" class="form-label">Titolo</label>
+                    <input type="text" name="title" id="name" class="@error('title') is-invalid @enderror form-control"  placeholder="Inserisci il titolo del fumetto">
                 </div>
                 <div>
                     <label for="description">Descrizione</label>
@@ -39,6 +39,16 @@
                 <button type="submit">
                     Crea
                 </button>
+
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
             </form>
         </div>
     </main>
